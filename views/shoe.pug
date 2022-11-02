@@ -6,3 +6,7 @@ block content
             div.row 
                 each item, index in results
                     div.col-sm-2(onclick=`buy(${index})`) Shoe Name: #{item["Shoe_Name"]} <br> Shoe Company: #{item["Shoe_Company"]} <br> Shoe Size: #{item["Shoe_Size"]} <br> Shoe Rating: #{item["Shoe_Rating"]}
+            script.
+                function buy(index) {
+                    alert("You purchased item " + index)
+                }                    
